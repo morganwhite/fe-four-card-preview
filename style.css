@@ -1,0 +1,153 @@
+:root {
+  --clr-red: hsl(0, 78%, 62%);
+  --clr-cyan: hsl(180, 62%, 55%);
+  --clr-orange: hsl(34, 97%, 64%);
+  --clr-blue: hsl(212, 86%, 64%);
+  --clr-dark-blue: hsl(234, 12%, 34%);
+  --clr-gray-blue: hsl(229, 6%, 66%);
+  --clr-light-gray: hsl(0, 0%, 98%);
+  --fnt-200: 200;
+  --fnt-400: 400;
+  --fnt-600: 600;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  margin: 5.25rem 2rem 0 2rem;
+}
+
+h1 {
+  font-size: 1.5rem;
+  letter-spacing: 0.17px;
+  font-weight: var(--fnt-200);
+  text-align: center;
+}
+
+.bold {
+  font-weight: var(--fnt-600);
+}
+
+h2 {
+  font-size: 1.25rem;
+}
+
+h3 {
+  font-size: 0.9375rem;
+  line-height: 1.5625rem;
+  letter-spacing: 0.1px;
+  color: var(--clr-gray-blue);
+  text-align: center;
+  margin-bottom: 4.75rem;
+}
+
+p {
+  font-size: 0.8125rem;
+  font-weight: var(--fnt-400);
+  color: var(--clr-gray-blue);
+  letter-spacing: 0.09px;
+  margin-bottom: 2rem;
+}
+
+.deck {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mid-deck {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  padding: 1.75rem;
+  /* border: 1px solid black; */
+  border-radius: 0.5rem;
+  max-width: 20rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.5);
+}
+
+.card.blue {
+  margin-bottom: 5rem;
+}
+
+.cyan {
+  border-top: 3px solid var(--clr-cyan);
+}
+
+.red {
+  border-top: 3px solid var(--clr-red);
+}
+
+.orange {
+  border-top: 3px solid var(--clr-orange);
+}
+
+.blue {
+  border-top: 3px solid var(--clr-blue);
+}
+
+.icon {
+  text-align: right;
+}
+
+img {
+  width: 57px;
+  height: 57px;
+}
+
+@media screen and (min-width: 45rem) {
+  h1 {
+    font-size: 2.25rem;
+    line-height: 3.375rem;
+    letter-spacing: 0.25px;
+  }
+
+  p {
+    margin-bottom: 2.5rem;
+  }
+
+  .deck {
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 5rem;
+  }
+
+  .mid-deck {
+    margin-right: 1.875rem;
+  }
+
+  .card {
+    padding: 2rem;
+    margin-bottom: 0;
+  }
+
+  .card.blue {
+    margin-bottom: 0;
+  }
+
+  img {
+    width: 64px;
+    height: 64px;
+  }
+
+  .cyan {
+    margin-right: 1.875rem;
+  }
+
+  .red {
+    margin-bottom: 1.875rem;
+  }
+}
